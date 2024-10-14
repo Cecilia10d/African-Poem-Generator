@@ -4,7 +4,7 @@ body {
 }
 
 a {
-    color: #49d8e0c2;
+    color: #08dae6c2;
 }
 
 .container {
@@ -24,13 +24,22 @@ h1 {
     color: #10c0ab;
 }
 
-form {
-    padding: 28px;
-    background-color: #ffffff;
-    box-shadow: 0px 20px 60px rgba(111, 120, 108, 0.08);
-    border-radius: 8px;
-    display: flex;
+.form-container {
+    background-color: white;
     margin-bottom: 28px;
+    border-radius: 8px;
+    box-shadow: 0px 20px 60px rgba(77, 46, 231, 0.08);
+    padding: 15px 20px;
+}
+
+form {
+    display: flex;
+}
+.hint {
+    line-height: 1.5;
+    margin-top: 5px;
+    opacity: 0.6;
+    font-size: 12px;
 }
 .instructions {
     padding: 14px;
@@ -39,6 +48,7 @@ form {
     font-size: 14px;
     border-radius: 45px;
     line-height: 18px;
+    color:#4a63bd
     
 }
 
@@ -58,13 +68,37 @@ form {
     background-color: #fff;
     padding: 20px;
     line-height: 2;
-    border-left: 3px solid #4a63bd;
+    border-left: 3px solid #1938aa;
     box-shadow: 0px 4px 30px 0px rgba(232, 231, 233, 0.03);
 
 }
 
+.hidden {
+    display: none;
+}
+
+.poem strong {
+    color: #3f2682;
+}
 footer {
     text-align: center;
     font-size: 12px;
     margin-top: 28px;
+}
+
+
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
