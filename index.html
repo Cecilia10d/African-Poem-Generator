@@ -1,47 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI African Poem Generator</title>
 </head>
+
 <body>
     <div class="container">
-    <header>
-    <h1>AI African Poem Generator</h1>
-    </header>
-   <main>
-    <form>
-        <input type="text" placeholder="Enter te topic of the African poem" 
-        autofocus
-        required
-        autocomplete="off"
-        class="instructions"
-        />
-        <input type="submit"  class="submit-button" />
-    </form>
-    <div class="poem">
-       
-   I'm living my days in African time
-        <br />
+        <header>
+            <h1>AI African Poem Generator</h1>
+        </header>
 
-        I'm walking the ways of season and rhyme
+        <main>
+            <form id="poem-generator-form">
+                <input type="text" placeholder="Enter the topic of the African poem" autofocus required
+                    autocomplete="off" class="instructions" />
+                <input type="submit" class="submit-button" />
+            </form>
+            <div class="poem" id="poem"></div>
+        </main>
+
+        <footer>
+            This AI project was coded by
+            This AI project was coded by
+            <a href="https://github.com/Cecilia10d" target="_blank">Cecilia Mutisya</a> and
+            is
+            <a href="https://github.com/Cecilia10d/African-Poem-Generator" target="_blank">
+                open-sourced on GitHub</a>
+            and is
+            <a href="https://ai-african-poem-generator.netlify.app" target="_blank">hosted on Netlify</a>
+        </footer>
     </div>
-   </main>
 
-    <footer>
-        This AI project was coded by
-        <a href="https://github.com/Cecilia10d" target="_blank">Cecilia Mutisya</a> and
-        is
-        <a href="https://github.com/Cecilia10d/African-Poem-Generator" target="_blank">
-            open-sourced on GitHub</a>
-        and is
-        <a href="https://ai-african-poem-generator.netlify.app" target="_blank">hosted on Netlify</a>.
-    </footer>
+    <script src="src/index.js"></script>
+</body>
 
-</div>
-<script src="src/index.js"></script>
-    </body>
-    
-    </html>
+</html>
